@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Time Viewer</h1>
+        
+        
+        <select id="countrySelect" onchange="updateCountry()">
+            <option value="">Select a Country</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="JP">Japan</option>
+            <option value="AU">Australia</option>
+            <option value="RU">Russia</option>
+            <option value="UZ">Uzbekistan</option>
+        </select>
+
+        <div id="clockContainer" class="clock-container">
+          
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+          new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+</body>
+</html>
